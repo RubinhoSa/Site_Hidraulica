@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #dbdbdb;
+    background-color: #ffffff;
 
 }
 nav {
@@ -13,8 +13,8 @@ nav {
     justify-content: space-around; /*Distancia entre os itens na navBar*/
     font-family: 'Poppins', sans-serif;
     align-items: center;
-    color: #202020;
-    background-color: rgba(171, 171, 171, 0.38);
+    color: #fcfcfc;
+    background-color: rgb(255, 0, 0);
 }
 
 .nav-itens {
@@ -24,12 +24,13 @@ nav {
 
 .nav-itens>li>a {
     padding-left: 15px;
-    color: #202020;
+    color: #fafafa;
     text-decoration: none;
 }
 
 .nav-itens>li>a:hover{
-    color: red;
+    color: rgb(5, 0, 0);
+    text-decoration: underline;
 }
 
 
@@ -237,4 +238,14 @@ h1{
     object-fit: cover;
     height: 500px;
     width: 89%;
+}
+
+footer{
+    height: 300px;
+    width: 100%;
+    background-color: #ff0000;
+}
+
+footer>ul{
+    color: white;
 }
