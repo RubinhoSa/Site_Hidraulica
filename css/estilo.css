@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #ffffff;
+    background-color: #f8f7f7;
 
 }
 nav {
@@ -100,31 +100,11 @@ button.add{
     height: 100%;
 }
 
-.btn{
-    font-size: 15px;
-    padding: 10px 50px;
-    border: none;
-    background-color: #202020;
-    color: white;
-    border-radius: 10px;
-    font-weight: 600;
-    transition: 0.5s background;
-    cursor: pointer;
-}
-.btn:hover{
-    transition: 0.5s background;
-    background-color: black;
-}
-
 h1{
-    padding: 20px;
-    color: #202020;
+    padding: 15px;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-size: 2.5rem;
+    font-family: 'Times New Roman', Times, serif;
 }
-
-
 /*IMAGEM CENTRAL*/
 .imagem{
     color: white;
@@ -150,27 +130,77 @@ h1{
 .promocao{
     display: flex;
     justify-content: center;
+    /* border: 2px solid black; */
 }
 .promo{
-    margin: 40px;
-    color: white;
-    background-color: rgb(105, 105, 105);
-    width: 200px;
-    height:200px;
+    border: 1px solid black;
     border-radius: 10px;
+    margin: 20px;
+    background-color: rgb(255, 255, 255);
+    width: 250px;
+    height:350px;
     text-align: center;
 }
 
 .promo>img{
-    width: 100%;
+    width: 85%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    height: 100%;
+    height: 50%;
 }
 
 .promo>img:hover{
     cursor: pointer;
 }
+
+.promo>h1{
+    padding: 5px;
+    color: rgb(187, 87, 87);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.promo>h4{
+    text-align: center;
+    color: rgb(187, 87, 87);
+
+}
+
+.promo>p{
+    text-align: center;
+    color: rgb(20, 14, 14);
+    margin: 30x;
+}
+
+/*FIM PROMOÇÃO*/
+
+
+/*COMPRAR PROMOÇÃO*/
+.btn_principal{
+    margin-top: 46px;
+}
+.btn{
+    
+    font-size: 15px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ff0000;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    transition: 0.5s background;
+    cursor: pointer;
+    width: 95%;
+
+}
+.btn:hover{
+    transition: 0.5s background;
+    background-color: rgb(168, 0, 0);
+}
+
+/*FIM COMPRAR PROMOÇÃO*/
 
 #whats_logo{
     width: 25px;
@@ -240,12 +270,14 @@ h1{
     width: 89%;
 }
 
-footer{
+.colum{
     height: 300px;
     width: 100%;
     background-color: #ff0000;
+    padding-left: 2rem;
+    display: flow-root;
+    text-decoration: none;
+    color: rgb(253, 253, 253);
 }
 
-footer>ul{
-    color: white;
-}
+/* FIM IMAGEM CENTRAL CARROSSEL*/
