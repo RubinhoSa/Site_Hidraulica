@@ -1,16 +1,8 @@
-const imgs = document.getElementById("img");
-const img = document.querySelectorAll("#img img")
-
-let idx = 0;
-
-function carrossel(){
-    idx++;
-
-    if( idx > img.length - 1){
-        idx = 0;
-    }
-
-    imgs.style.transform = `translateX(${-idx * 1705}px)`;
-}
-
-setInterval(carrossel,5000);
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+        items: 1,
+        nav: true,
+        loop: true,
+        autoplay: true
+    });
+}); 

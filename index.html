@@ -6,151 +6,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <link rel="stylesheet" href="/css/estilo.css">
-    <script src="/javaScript/script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/owlcarousel/assets/owl.carousel.css">
+    <link rel="stylesheet" href="/owlcarousel/assets/owl.theme.default.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
+    <script src="/owlcarousel/owl.carousel.min.js" defer></script>
+    <script src="/javaScript/script.js" defer></script>
 </head>
 <body>
 
-  <header>
-    <nav>
-        <div > 
-          <img id="logo" src="img/logo.png" alt="Logo">
-        </div>
-
-        
-        <div class="search-bar">
-          <input type="text" placeholder="Busque tintas, madeira, metais etc...">
-          <button class="add">Procurar</button>
-        </div>
-
+  <header class="header">
+    <div class="container">
+      <img src="img/logo.png" alt="Logo" class="logo">
       
-        <div>
-          <button class="cadastrar">CADASTRAR</button>
-          <button class="login">LOGIN</button>
-        </div>
-        <br>
-    </nav>
+      <div class="search">
+        <input type="text" placeholder="Busque tintas, madeira, metais etc...">
+        <button class="add">Procurar</button>
+      </div>
 
-    <div class="nav2">
-        <ul class="nav2-itens">
-           <li><a href="#">PRODUTOS</a></li>
-           <li><a href="#">OFERTAS</a></li>
-           <li><a href="#">FERRAMENTAS</a></li>
-           <li><a href="#">ELETRICA</a></li>
-           <li><a href="#">ILUMINAÇÃO</a></li>
-           <li><a href="#">MATERIAIS PESADOS</a></li>
-        </ul>
+      <div class="login">
+        <img src="img/login.png" alt="login">
+        <div class="login-link">
+          Faça seu <a href="#">Login</a><br /> ou <a href="#">Cadastre-se</a>
+        </div>
+      </div>
     </div>
     
+    <nav class="menu">
+      <div class="container">
+        <a href="#">PRODUTOS</a>
+        <a href="#">OFERTAS</a>
+        <a href="#">FERRAMENTAS</a>
+        <a href="#">ELETRICA</a>
+        <a href="#">ILUMINAÇÃO</a>
+        <a href="#">MATERIAIS PESADOS</a>
+      </div>
+    </nav>
   </header>
 
-
-  <main>
-    <div class="estilo">
-      <div class="carrossel">
-        <div class="container" id="img">
-          <img src="https://casamaisfacil.vteximg.com.br/arquivos/ids/166385/tinta-glasu-fosco-lata-desk.jpg?v=638503413905400000" alt="">
-          <img src="https://casamaisfacil.vteximg.com.br/arquivos/ids/166413/fechadura-digital-intelbras-fr10.jpg?v=638503665274170000" alt="">
-          <img src="https://casamaisfacil.vteximg.com.br/arquivos/ids/166387/tinta-textura-rustico-desk.jpg?v=638503419770970000" alt="">
-          <img src="https://casamaisfacil.vteximg.com.br/arquivos/ids/166457/obraprecisa-bprincipal-desk.jpg?v=638510352031230000" alt="">
-        </div>
-      </div>
-    </div> 
-    
-    <h1>Destaques</h1>
-    <div class="main">
-      <div class="card card1">
-        <img src="img/Destaque/compre-retire-desk.jpg" alt="imagem1">
-        <!-- <h1>Imagem1</h1> -->
-        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus excepturi officia quis fugit ad, sequi consectetur similique, ut quas corrupti illo soluta laboriosam pariatur culpa assumenda voluptatum dolorem veniam! Tenetur?</p>
-          <button class="btn">COMPRAR</button> -->
-      </div>
-
-      <div class="card card1">
-        <img src="img/Destaque/obra-precisa-desk.jpg" alt="imagem1">
-        <!-- <h1>Imagem1</h1> -->
-        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus excepturi officia quis fugit ad, sequi consectetur similique, ut quas corrupti illo soluta laboriosam pariatur culpa assumenda voluptatum dolorem veniam! Tenetur?</p>
-          <button class="btn">COMPRAR</button> -->
-      </div>
-
-      <div class="card card1">
-        <img src="img/Destaque/pisos-ceramicos.jpg" alt="imagem1">
-        <!-- <h1>Imagem1</h1> -->
-        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus excepturi officia quis fugit ad, sequi consectetur similique, ut quas corrupti illo soluta laboriosam pariatur culpa assumenda voluptatum dolorem veniam! Tenetur?</p>
-          <button class="btn">COMPRAR</button> -->
-      </div>
-      <div class="card card2">
-        <img src="img/Destaque/REVESTIMENTOS.jpg" alt="image2">
-        <!-- <h1>Imagem1</h1> -->
-        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus excepturi officia quis fugit ad, sequi consectetur similique, ut quas corrupti illo soluta laboriosam pariatur culpa assumenda voluptatum dolorem veniam! Tenetur?</p>
-        <button class="btn">COMPRAR</button> -->
-      </div>
+  <div class="container">
+    <div class="owl-carousel">
+      <div><img src="http://lorempixel.com.br/1200/300/?1" alt=""></div>
+      <div><img src="http://lorempixel.com.br/1200/300/?2" alt=""></div>
+      <div><img src="http://lorempixel.com.br/1200/300/?3" alt=""></div>
+      <div><img src="http://lorempixel.com.br/1200/300/?4" alt=""></div>
     </div>
-
-    <h1>Produtos em oferta</h1>
 
     <div class="promocao">
-      <div class="promo">
-        <img src="https://lojascastelinho.com.br/wp-content/uploads/2017/07/bacia-com-caixa.jpg" alt="imagem1">
-        <h4>Vaso sanitario Elizabete</h4>
-        <h1>R$ 400,00 </h1>
-        <p>Avista no pix</p>
-        <div class="btn_principal">
-          <button class="btn">COMPRAR</button>
-        </div>
+      <article class="promo">
+        <header>
+          <img src="https://lojascastelinho.com.br/wp-content/uploads/2017/07/bacia-com-caixa.jpg" alt="imagem1">
+          <h4>Vaso sanitario Elizabete</h4>
+          <h1>R$ 400,00 </h1>
+          <p>Avista no pix</p>
+        </header>
         
-      </div>
-
-      <div class="promo">
-        <img src="https://www.dishelp.com.br/products/Dishelp/5f034dd7963f555dfa57eb56/5f035008963f5562a321dec9/400x400/telha-vogatex-4mm-244m-x-50cm-eternit.jpg" alt="imagem2">
-        <h4>Telha vogatex 2,44 x 50 eternit</h4>
-        <h1>R$ 22,00 </h1>
-        <p>Avista no pix</p>
-        <div class="btn_principal">
-          <button class="btn">COMPRAR</button>
-        </div>
-      </div>
-
-      <div class="promo">
-        <img src="https://www.dishelp.com.br/products/Dishelp/5d09189d20cd490f3032289f/5d0918ab20cd490f265c66f6/400x400/argamassa-colante-ac-ii-ceramica-interna-e-externa-20-kg.jpg" alt="imagem3">
-        <h4>Votomassa ACII Interna e Externa</h4>
-        <h1>R$ 20,00 </h1>
-        <p>Avista no pix</p>
-        <div class="btn_principal">
-          <button class="btn">COMPRAR</button>
-        </div>
-      </div>
-
-      <div class="promo">
-        <img src="https://static.dishelp.com.br/product/picture/5d07d4c820cd4927e2197032/62dac5adf547bff858018e43/400x400-cimento-todas-as-obras-poty-50kg.jpg" alt="image4">
-        <h4>Cimento Poty 50KG</h4>
-        <h1>R$ 40,00 </h1>
-        <p>Avista no pix</p>
-        <div class="btn_principal">
-          <button class="btn">COMPRAR</button>
-        </div>
-      </div>
-
-      <div class="promo">
-        <img src="https://www.dishelp.com.br/products/Dishelp/5d30755c20cd4933aa1d9101/5d3076da20cd493376697e55/400x400/tinta-acrilica-rendimento-extra-branca-18l.jpg" alt="image5">
-        <h4>Tinta Eucatex </h4>
-        <h1>R$ 280,00 </h1>
-        <p>Avista no pix</p>
-        <div class="btn_principal">
-          <button class="btn">COMPRAR</button>
-        </div>
-      </div>
-    </div>
-  </main>
-
-  <footer>
-    <div class="column">
-      <h4 id="departamento">DEPARTAMENTO</h4>
-
-    </div>
-  </footer>
+        <button class="btn">COMPRAR</button>
+      </article>
   
+      <article class="promo">
+        <header>
+          <img src="https://www.dishelp.com.br/products/Dishelp/5f034dd7963f555dfa57eb56/5f035008963f5562a321dec9/400x400/telha-vogatex-4mm-244m-x-50cm-eternit.jpg" alt="imagem2">
+          <h4>Telha vogatex 2,44 x 50 eternit asdf asdf sd asdf asdf </h4>
+          <h1>R$ 22,00 </h1>
+          <p>Avista no pix</p>
+        </header>
+        
+        <button class="btn">COMPRAR</button>
+      </article>
+  
+      <article class="promo">
+        <header>
+          <img src="https://www.dishelp.com.br/products/Dishelp/5d09189d20cd490f3032289f/5d0918ab20cd490f265c66f6/400x400/argamassa-colante-ac-ii-ceramica-interna-e-externa-20-kg.jpg" alt="imagem3">
+          <h4>Votomassa ACII Interna e Externa</h4>
+          <h1>R$ 20,00 </h1>
+          <p>Avista no pix</p>
+        </header>
+        
+        <button class="btn">COMPRAR</button>
+      </article>
+  
+      <article class="promo">
+        <header>
+          <img src="https://static.dishelp.com.br/product/picture/5d07d4c820cd4927e2197032/62dac5adf547bff858018e43/400x400-cimento-todas-as-obras-poty-50kg.jpg" alt="image4">
+          <h4>Cimento Poty 50KG</h4>
+          <h1>R$ 40,00 </h1>
+          <p>Avista no pix</p>
+        </header>
+        
+        <button class="btn">COMPRAR</button>
+      </article>
+  
+      <article class="promo">
+        <header>
+          <img src="https://www.dishelp.com.br/products/Dishelp/5d30755c20cd4933aa1d9101/5d3076da20cd493376697e55/400x400/tinta-acrilica-rendimento-extra-branca-18l.jpg" alt="image5">
+          <h4>Tinta Eucatex </h4>
+          <h1>R$ 280,00 </h1>
+          <p>Avista no pix</p>
+        </header>
+        
+        <button class="btn">COMPRAR</button>
+      </article>
+    </div>
+  </div>
 </body>
 </html>
