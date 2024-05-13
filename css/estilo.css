@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+
 body{
     margin: 0;
     background-color: #f8f7f7;
@@ -171,7 +172,7 @@ button.add{
 .promo p{
     text-align: center;
     color: rgb(20, 14, 14);
-    margin: 30x;
+    margin: 30px;
 }
 
 /*FIM PROMOÇÃO*/
@@ -200,3 +201,30 @@ button.add{
 }
 
 /*FIM COMPRAR PROMOÇÃO*/
+
+.destaque{
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.desta{
+    width: 350px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.desta img{
+    width: 100%;
+    height: auto;
+
+}
+
+footer{
+    margin-top: 70px;
+    background-color: rgb(231, 0, 0);
+    width: 100%;
+    height: 250px;
+}
