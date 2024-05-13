@@ -5,41 +5,57 @@
 }
 
 body{
+    padding: 1px;
     background-color: #f8f7f7;
 
 }
+
 nav {
+    border-radius: 10px 10px 0px 0px;
     display: flex;
-    justify-content: space-around; /*Distancia entre os itens na navBar*/
     font-family: 'Poppins', sans-serif;
     align-items: center;
     color: #fcfcfc;
     background-color: rgb(255, 0, 0);
 }
 
-.nav-itens {
-    list-style: none;
+
+/*NAV2*/
+
+.nav2{
+    justify-content: space-evenly; /*Distancia entre os itens na navBar*/
+    background-color: #ff0000;
     display: flex;
+    padding-bottom: 15px;
 }
 
-.nav-itens>li>a {
-    padding-left: 15px;
+.nav2-itens {
+    list-style: none; /*REMOVE A BOLINHA NA FRENTE DA LISTA*/
+    display: flex; /*Centraliza todo o material que ficaria um em baixo do*/
+    
+}
+
+.nav2-itens>li>a {
+    padding-left: 15px; /*Distancia entre um link e outro*/
     color: #fafafa;
     text-decoration: none;
+    
 }
 
-.nav-itens>li>a:hover{
+.nav2-itens>li>a:hover{
     color: rgb(5, 0, 0);
-    text-decoration: underline;
+    /*text-decoration: underline; /*Ao passar o mouse sobre o link fica em _____*/
 }
+/*FIM NAV BAR2*/
 
-
-.email_whats{
-    font-family: 'Poppins', sans-serif;
+#logo{
+    margin-left: 30px;
+    height: 180px;
+    height: auto auto;
 }
 
 /*Barra de pesquisa*/
-header{
+.search-bar{
     padding: 25px;
     display: flex;
     flex-flow: row wrap;
@@ -57,6 +73,7 @@ input{
     border-top-left-radius:10px ;
     border-bottom-left-radius: 10px;
 }
+
 /*Botão da pesquisa*/
 button.add{
     width: 10%;
@@ -69,6 +86,11 @@ button.add{
     border-top-right-radius:10px ;
     border-bottom-right-radius: 10px;
 }
+
+/*FIM DA BARRA DE PESQUEISA*/
+
+
+
 
 /*CARD DESTAQUE*/
 .main{
@@ -202,13 +224,8 @@ h1{
 
 /*FIM COMPRAR PROMOÇÃO*/
 
-#whats_logo{
-    width: 25px;
-    height: 30px;
-    padding-top: 5px;
-}
-
 .cadastrar{
+    
     background-color: rgb(24, 26, 20);
     border-radius: 10px;
     border: none;
@@ -245,7 +262,8 @@ h1{
 
 /*IMAGEM CENTRAL CARROSSEL*/
 .estilo{
- display: flex;
+    padding-top: 20px;
+    display: flex;
     align-items: center;
     justify-content: center;
     margin: 0px;
@@ -281,3 +299,10 @@ h1{
 }
 
 /* FIM IMAGEM CENTRAL CARROSSEL*/
+
+footer {
+    background-color: #ff0000;
+    padding: 40px;
+    border-radius: 0px 0px 10px 10px;
+    
+}
