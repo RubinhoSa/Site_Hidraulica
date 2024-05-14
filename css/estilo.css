@@ -11,52 +11,60 @@ body{
     font-style: normal;
     font-weight: 400;
 }
+/*CONTAINER SEMPRE TEM QUE TER E O PADRÃO JUNTO COM O BODY E O *   */
 
 .container {
-    width: 100%;
-    max-width: 1200px;
+    width: 100%; /*TUDO QUE TIVER DENTRO DA CLASSE CONTEINER VAI TER 100% DA TELA*/
+    max-width: 1200px; /*SEMPRE POR 1200px E UMA BASE QUE FUNCIONA NA MAIORIA DAS TELAS*/
     margin: 0 auto;
 }
 
+
+/*cabeçalho*/
 .header {
     background-color: red;
-    padding: 20px 0 0 0;
+    padding: 20px 0 0 0; /*padding de 20 pixels para o topo de um elemento, e nenhum padding para o lado direito, inferior ou esquerdo. Ou seja, é equivalente a padding-top: 20px;.*/
     color: white;
-    margin-bottom: 30px;
+    margin-bottom: 30px; /*define uma margem de 30 pixels na parte inferior de um elemento. Isso significa que o espaço entre o elemento atual e o próximo elemento abaixo dele será de 30 pixels.*/
 }
+/*classe Container que está dentro da classe header*/
 .header .container {
     display: flex; 
-    align-items: center;
-    flex: 1;
-    column-gap: 20px;
+    align-items: center; /*ELE CENTRALIZA O OS ITEMS NA VERTICAL E FIXA NO MEIO */
+    flex: 1; /*Em resumo, flex: 1; faz com que o elemento filho expanda para preencher todo o espaço disponível no contêiner flexível.*/
+    column-gap: 20px; /*column-gap: 20px; define um espaçamento de 20 pixels entre as colunas dentro desse contêiner grid. Isso cria um espaço uniforme entre as colunas, permitindo um layout mais organizado.*/
 }
+/*Classe logo que está dentro da classe header*/
 .header .logo {
-    width: 200px;
-    height: auto;
+    width: 200px; /*A LARGURA DEFINE DE ACORDO COM A IMAGEM QUE VC COLOCOU*/
+    height: auto; /*SEMPRE EM IMAGENS DEIXAR o HEIGTH QUE E A ALTURA AUTOMATICO.*/
 }
-
+/*CLASSE MENU*/
 .menu {
     display: flex;
     align-items: center;
     background-color: rgb(177, 9, 9);
-    margin-top: 20px;
+    margin-top: 20px; /*Isso significa que o espaço entre o elemento atual e o próximo elemento acima dele será de 20 pixels.*/
 }
+/*a Que está dentro da classe menu*/
 .menu a {
     display: block;
     padding: 15px;
-    white-space: nowrap;
+    white-space: nowrap;/*é usada em CSS para especificar que o texto dentro de um elemento deve ser exibido em uma única linha, sem quebras de linha automáticas. Isso significa que o texto não será quebrado automaticamente para caber dentro do contêiner, mesmo se ultrapassar sua largura. Ele será exibido em uma única linha horizontalmente.*/
     color: white;
-    text-decoration: none;
-    font-weight: 700;
+    text-decoration: none; /*REMOVE A DECORAÇÃO*/
+    font-weight: 700; /*DEIXA A FONTE MAIS EM NEGRITO*/
 }
+/*:HOUVER sig quando passar o mouse por cima do a do menu( vai aparecer as informações que a gente colocar abaixo)*/
 .menu a:hover {
     background-color: red;
 }
-
+/*BARRA DE PESQUISA CLASSE SEARCH*/
 .search {
     display: flex;
     flex: 1;
 }
+/*INPUT QUE ESTÁ DENTRO DA CLASSE SEARCH*/
 .search input {
     flex: 1
 }
@@ -64,44 +72,26 @@ body{
 .login {
     display: flex;
     align-items: center;
-    gap: 5px;
-}
-
-input{
-    height: 30px;
-    font-size: 1rem;
-    width:30%;
-    padding-left: 2%;
-    border-radius: 5px 0px 0px 5px;
-    background-color: rgb(248, 248, 248);
-    font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
+    gap: 5px; /*ESPAÇAMENTO DE UM ITEM PARA OUTRO*/
+    /*é usada em um contêiner com display: grid; ou display: flex; para definir o espaçamento entre os itens filhos. Nesse caso, gap: 5px; define um espaçamento de 5 pixels entre os itens dentro desse contêiner. Isso cria um espaço uniforme entre os itens, permitindo um layout mais organizado.*/
 }
 
 /*Botão da pesquisa*/
+
+/*TAG BUTOON DA CLASSE ADD*/
 button.add{
     width: 10%;
-    cursor: pointer;
-    background: rgb(255, 0, 0);
+    cursor: pointer; /*AO ADICIONAR O curson: pointer; ao passar em cima do item ele fica com o mouse diferente, parecendo que quer ser clicado*/
+    background-color: rgb(177, 9, 9);
     color: white;
     font-weight: bold;
-    border: nome;
+    border: none;
     height: 30px;
     border-top-right-radius:10px ;
     border-bottom-right-radius: 10px;
 }
 
-.botao {
-    background-color: rgb(24, 26, 20);
-    border-radius: 10px;
-    border: none;
-    color: white;
-    height: 30px;
-    width: 130px;
-    cursor: pointer;
-    text-decoration: none;
-    transition: 0.5 background;
-}
-
+/*CARROSSEL*/
 .owl-dot span {
     width: 10px;
     height: 10px;
@@ -174,14 +164,10 @@ button.add{
     color: rgb(20, 14, 14);
     margin: 30px;
 }
-
 /*FIM PROMOÇÃO*/
 
 
 /*COMPRAR PROMOÇÃO*/
-/* .btn_principal{
-    margin-top: 46px;
-} */
 .btn{
     font-size: 15px;
     padding: 10px 10px;
@@ -199,7 +185,6 @@ button.add{
     transition: 0.5s background;
     background-color: rgb(168, 0, 0);
 }
-
 /*FIM COMPRAR PROMOÇÃO*/
 
 .destaque{
