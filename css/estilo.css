@@ -6,9 +6,9 @@
 body{
     margin: 0;
     background-color: #f8f7f7;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+    font-family: "Montserrat", sans-serif; /*FONTE IMPORTADA QUE E UTILIZADA EM QUALQUER CANTO DO SITE*/
+    font-optical-sizing: auto; /*FONTE IMPORTADA QUE E UTILIZADA EM QUALQUER CANTO DO SITE*/
+    font-style: normal; /*FONTE IMPORTADA QUE E UTILIZADA EM QUALQUER CANTO DO SITE*/
     font-weight: 400;
 }
 /*CONTAINER SEMPRE TEM QUE TER E O PADRÃO JUNTO COM O BODY E O *   */
@@ -63,10 +63,12 @@ body{
 .search {
     display: flex;
     flex: 1;
+    max-width: 800px; /* Define a largura máxima para evitar que o input fique muito largo */
+    margin: 0 auto; /* Centraliza o elemento na tela */
 }
 /*INPUT QUE ESTÁ DENTRO DA CLASSE SEARCH*/
 .search input {
-    flex: 1
+    flex: 1;
 }
 
 .login {
@@ -78,17 +80,17 @@ body{
 
 /*Botão da pesquisa*/
 
-/*TAG BUTOON DA CLASSE ADD*/
+/*TAG BUTTON DA CLASSE ADD*/
 button.add{
-    width: 10%;
-    cursor: pointer; /*AO ADICIONAR O curson: pointer; ao passar em cima do item ele fica com o mouse diferente, parecendo que quer ser clicado*/
-    background-color: rgb(177, 9, 9);
-    color: white;
-    font-weight: bold;
-    border: none;
     height: 30px;
+    padding: 8px 16px; /* Adiciona um espaçamento interno ao botão */
+    font-weight: bold;
+    background-color: rgb(177, 9, 9); /* Define a cor de fundo do botão */
+    color: #fff; /* Define a cor do texto do botão */
+    border: none; /* Remove a borda do botão */
     border-top-right-radius:10px ;
     border-bottom-right-radius: 10px;
+    cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
 }
 
 /*CARROSSEL*/
