@@ -39,6 +39,8 @@ body{
     width: 200px; /*A LARGURA DEFINE DE ACORDO COM A IMAGEM QUE VC COLOCOU*/
     height: auto; /*SEMPRE EM IMAGENS DEIXAR o HEIGTH QUE E A ALTURA AUTOMATICO.*/
 }
+
+
 /*CLASSE MENU*/
 .menu {
     display: flex;
@@ -53,12 +55,59 @@ body{
     white-space: nowrap;/*é usada em CSS para especificar que o texto dentro de um elemento deve ser exibido em uma única linha, sem quebras de linha automáticas. Isso significa que o texto não será quebrado automaticamente para caber dentro do contêiner, mesmo se ultrapassar sua largura. Ele será exibido em uma única linha horizontalmente.*/
     color: white;
     text-decoration: none; /*REMOVE A DECORAÇÃO*/
-    font-weight: 700; /*DEIXA A FONTE MAIS EM NEGRITO*/
+    font-weight: 700;
 }
-/*:HOUVER sig quando passar o mouse por cima do a do menu( vai aparecer as informações que a gente colocar abaixo)*/
-.menu a:hover {
+.menu a:hover{
     background-color: red;
 }
+/*FIM CLASSE MENU*/
+
+/* CLASSE Dropdown container */
+.dropdown {
+    font-size: 12px;
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none; /*FAZ COM QUE OCULTE OS PRODUTOS DO DROPDOWN*/
+    position: absolute;
+    background-color: rgb(177, 9, 9);
+    height: auto;
+    z-index: 200; /* Ajuste o valor do z-index para que o dropdown fique sobre os outros elementos */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /*AO PASSAR O MOUSE EM CIMA DO DROPDOWN O DROPDOWN-CONTENT EXIBE O DISPLAY BLOCK( AMOSTRA OS PRODUTOS )*/
+}
+
+
+/* CLASSE Dropdown container */
+.dropdown2{
+    font-size: 12px;
+    position: relative;
+    display: block;
+}
+
+.dropdown-content2 {
+    display: none; /*FAZ COM QUE OCULTE OS PRODUTOS DO DROPDOWN*/
+    position: absolute;
+    background-color: rgb(177, 9, 9);
+    z-index: 200; /* Ajuste o valor do z-index para que o dropdown fique sobre os outros elementos */
+}
+
+.dropdown2:hover .dropdown-content2 {
+    display: block; /*AO PASSAR O MOUSE EM CIMA DO DROPDOWN O DROPDOWN-CONTENT EXIBE O DISPLAY BLOCK( AMOSTRA OS PRODUTOS )*/
+    margin-left: 227px;
+    top: 0;
+}
+
+a.fonte{
+    font-size: 15px;
+}
+
+/**/
+
+/**/
 /*BARRA DE PESQUISA CLASSE SEARCH*/
 .search {
     display: flex;
@@ -108,6 +157,7 @@ button.add{
     height: 16px;
 }
 .owl-dots {
+    padding: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -209,9 +259,56 @@ button.add{
 
 }
 
-footer{
-    margin-top: 70px;
-    background-color: rgb(231, 0, 0);
-    width: 100%;
-    height: 250px;
+
+.footer {
+    
+    margin-top: 20px;
+    background-color: #ff0000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center; /* Centraliza o conteúdo do footer */
+    position: relative; /* Adiciona posição relativa ao footer para posicionamento absoluto dos elementos internos */
 }
+
+.footer .container {
+
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer .logo img {
+    margin-top: 10px;
+    max-height: 150px;
+}
+
+.footer .info p {
+    margin: 5px 0;
+}
+
+.footer .payments img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.footer .credit {
+    margin-top: 20px; /* Adiciona um espaço acima do parágrafo */
+    position: absolute; /* Posiciona o parágrafo de forma absoluta */
+    bottom: 10px; /* Define a distância do parágrafo em relação ao fundo da página */
+    left: 50%; /* Posiciona o parágrafo no centro horizontalmente */
+    transform: translateX(-50%); /* Centraliza o parágrafo horizontalmente */
+    width: 100%; /* Ocupa toda a largura do footer */
+}
+.footer .credit a{
+   text-decoration: none;
+   color: white;
+}
+
+.footer .credit a:hover{
+    text-decoration: underline;
+    color: black;
+ }
