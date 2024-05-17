@@ -163,21 +163,41 @@ button.add{
     align-items: center;
 }
 
+.owl-nav {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.owl-nav button span {
+    font-size: 30px;
+    
+}
+.owl-prev{
+    margin-left: -30px;
+}
+
+.owl-next{
+    margin-right: -30px;
+}
 
 
 /*Promoção*/
-.promocao{
-    display: flex;
-    gap: 20px;
+.promocao {
     margin-top: 30px;
-    /* border: 2px solid black; */
+}
+.promocao .owl-stage {
+    display: flex;
 }
 .promo{
+    height: 100%;
     padding: 10px;
     border: 1px solid black;
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
-    width: 250px;
     text-align: center;
     display: flex;
     flex-direction: column;
