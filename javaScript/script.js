@@ -7,9 +7,9 @@ $(document).ready(function(){
         
     });
     $("#promocao").owlCarousel({
-        items: 4,
+        items: 5,
         nav: true,
-        loop: true,
+        // loop: true,
         margin: 20
         
     });
