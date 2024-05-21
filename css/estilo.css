@@ -2,10 +2,9 @@
     box-sizing: border-box;
 }
 
-
 body{
     margin: 0;
-    background-color: #f8f7f7;
+    background-color: #e6e6e6;
     font-family: "Montserrat", sans-serif; /*FONTE IMPORTADA QUE E UTILIZADA EM QUALQUER CANTO DO SITE*/
     font-optical-sizing: auto; /*FONTE IMPORTADA QUE E UTILIZADA EM QUALQUER CANTO DO SITE*/
     font-style: normal; /*FONTE IMPORTADA QUE E UTILIZADA EM QUALQUER CANTO DO SITE*/
@@ -29,7 +28,7 @@ body{
 }
 /*classe Container que está dentro da classe header*/
 .header .container {
-    display: flex; 
+    display: flex;  /*A propriedade display: flex no CSS define um contêiner flexível e ativa o Flexbox para seus elementos filhos. Isso facilita a criação de layouts complexos, pois os itens dentro do contêiner flexível podem ser distribuídos e alinhados de várias maneiras.*/
     align-items: center; /*ELE CENTRALIZA O OS ITEMS NA VERTICAL E FIXA NO MEIO */
     flex: 1; /*Em resumo, flex: 1; faz com que o elemento filho expanda para preencher todo o espaço disponível no contêiner flexível.*/
     column-gap: 20px; /*column-gap: 20px; define um espaçamento de 20 pixels entre as colunas dentro desse contêiner grid. Isso cria um espaço uniforme entre as colunas, permitindo um layout mais organizado.*/
@@ -333,3 +332,82 @@ button.add{
     text-decoration: underline;
     color: black;
  }
+
+
+ .departamentos{
+    display: flex;
+    gap: 20px; /*Distancia entre os itens*/
+    flex-wrap: wrap /*A propriedade flex-wrap no CSS é usada para definir se os itens flexíveis em um contêiner flexível devem ser dispostos em uma única linha ou podem quebrar em várias linhas. Quando você define flex-wrap: wrap, os itens dentro do contêiner flexível serão quebrados em várias linhas, se necessário, ao invés de ficarem comprimidos em uma única linha.*/
+ }
+
+.depart {
+    display: flex;
+    padding: 10px; 
+    width: 250px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.depart a{
+    text-decoration: none;
+    color: black;
+}
+.depart:hover{
+    cursor: pointer;
+    border: 1px solid rgb(255, 0, 0);
+}
+
+.depart img{
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+/*FIM PROMOÇÃO*/
+
+
+/*COMPRAR PROMOÇÃO*/
+.btn{
+    font-size: 15px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ff0000;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    transition: 0.5s background;
+    cursor: pointer;
+    width: 100%;
+
+}
+.btn:hover{
+    transition: 0.5s background;
+    background-color: rgb(168, 0, 0);
+}
+/*FIM COMPRAR PROMOÇÃO*/
+
+
+
+
+.produtos {
+    display: flex;
+    margin: 20px;
+    
+}
+
+.produt {
+    width: 350px;
+    display: grid;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+}
+.produt img {
+    height: auto;
+    width: 100%;
+}
