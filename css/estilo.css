@@ -212,6 +212,7 @@ button.add{
 }
 
 .promo img:hover{
+    opacity: 0.8;
     cursor: pointer;
 }
 
@@ -279,6 +280,10 @@ button.add{
 
 }
 
+.desta:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
 
 .footer {
     
@@ -392,22 +397,75 @@ button.add{
 
 
 
-
+.logo_whats{
+    position: fixed;
+    z-index: 2;
+    right: -4px;
+    top: 93%;
+}
 .produtos {
     display: flex;
-    margin: 20px;
+}
+.produt{
+    margin: 0px;
+    padding: 0px;
+}
+
+#img_bacia{
+    border: 1px solid black;
+    width: 50%;
+    margin-left: 200px;
+}
+#img_bacia:hover{
+    opacity: 0.5;
+}
+
+.valores{
+    padding-top: 5%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: rgb(86, 92, 105);
     
 }
 
-.produt {
-    width: 350px;
-    display: grid;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-    gap: 1rem;
-    width: 100%;
+.valores #valor{
+    margin: 0;
+    font-size: 2rem;
+    color: #ff0000;
+    margin: 10px 0px 10px 0px ;
 }
-.produt img {
-    height: auto;
-    width: 100%;
+
+.bnt_produtos
+{
+    padding-top: 6%;
+    margin-left: 2%;
+}
+.bnt_buy{
+    display: inline;
+    background-color: #ff0000;
+    height: 3rem;
+    border: none;
+    border-radius: 0.25rem;
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 700;
+    cursor: pointer;
+    width: 250px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.carrinho{
+    background-color: #ff0000;
+    height: 3rem;
+    border: none;
+    border-radius: 0.25rem;
+    width: 50px;
+    cursor: pointer;
 }
