@@ -43,9 +43,10 @@ body{
 /*CLASSE MENU*/
 .menu {
     display: flex;
+    justify-content: center;
     align-items: center;
     background-color: rgb(177, 9, 9);
-    margin-top: 20px; /*Isso significa que o espaço entre o elemento atual e o próximo elemento acima dele será de 20 pixels.*/
+    /* margin-top: 20px; Isso significa que o espaço entre o elemento atual e o próximo elemento acima dele será de 20 pixels. */
 }
 /*a Que está dentro da classe menu*/
 .menu a {
@@ -340,6 +341,7 @@ button.add{
 
 
  .departamentos{
+    margin-left: 5%;
     display: flex;
     gap: 20px; /*Distancia entre os itens*/
     flex-wrap: wrap /*A propriedade flex-wrap no CSS é usada para definir se os itens flexíveis em um contêiner flexível devem ser dispostos em uma única linha ou podem quebrar em várias linhas. Quando você define flex-wrap: wrap, os itens dentro do contêiner flexível serão quebrados em várias linhas, se necessário, ao invés de ficarem comprimidos em uma única linha.*/
@@ -371,6 +373,9 @@ button.add{
     border-top-right-radius: 10px;
 }
 
+#departamento_title{
+    padding-left: 5%;
+}
 
 /*FIM PROMOÇÃO*/
 
@@ -407,13 +412,14 @@ button.add{
     display: flex;
 }
 .produt{
-    margin: 0px;
-    padding: 0px;
+    /* background-color: black; */
+    width: 47%;
+    height: auto;
 }
 
 #img_bacia{
     border: 1px solid black;
-    width: 50%;
+    width: 40%;
     margin-left: 200px;
 }
 #img_bacia:hover{
@@ -468,4 +474,27 @@ button.add{
     border-radius: 0.25rem;
     width: 50px;
     cursor: pointer;
+    
+}
+
+#nome_produtos{
+    
+    padding-left: 25%;
+    color: rgb(72, 76, 83);
+}
+
+@media screen and (min-width: 374px) and (max-width: 896px){
+    .login{
+        position: absolute;
+        left: 90%;
+        top: 3%;
+    }
+
+    .header{
+        margin-bottom: 5px;
+    }
+    .menu{
+        display: none;
+        padding-bottom: 50px;
+    }
 }
