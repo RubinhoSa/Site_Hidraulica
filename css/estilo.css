@@ -16,7 +16,9 @@ body{
     width: 100%; /*TUDO QUE TIVER DENTRO DA CLASSE CONTEINER VAI TER 100% DA TELA*/
     max-width: 1200px; /*SEMPRE POR 1200px E UMA BASE QUE FUNCIONA NA MAIORIA DAS TELAS*/
     margin: 0 auto;
+    padding: 0 20px;
 }
+
 
 
 /*cabeçalho*/
@@ -31,7 +33,7 @@ body{
     display: flex;  /*A propriedade display: flex no CSS define um contêiner flexível e ativa o Flexbox para seus elementos filhos. Isso facilita a criação de layouts complexos, pois os itens dentro do contêiner flexível podem ser distribuídos e alinhados de várias maneiras.*/
     align-items: center; /*ELE CENTRALIZA O OS ITEMS NA VERTICAL E FIXA NO MEIO */
     flex: 1; /*Em resumo, flex: 1; faz com que o elemento filho expanda para preencher todo o espaço disponível no contêiner flexível.*/
-    column-gap: 20px; /*column-gap: 20px; define um espaçamento de 20 pixels entre as colunas dentro desse contêiner grid. Isso cria um espaço uniforme entre as colunas, permitindo um layout mais organizado.*/
+    column-gap: 50px; /*column-gap: 50px; define um espaçamento de 50 pixels entre as colunas dentro desse contêiner grid. Isso cria um espaço uniforme entre as colunas, permitindo um layout mais organizado.*/
 }
 /*Classe logo que está dentro da classe header*/
 .header .logo {
@@ -105,6 +107,12 @@ a.fonte{
     font-size: 15px;
 }
 
+.cart {
+    flex: 1;
+    display: flex;
+    gap: 20px;
+}
+
 /**/
 
 /**/
@@ -112,12 +120,14 @@ a.fonte{
 .search {
     display: flex;
     flex: 1;
-    max-width: 800px; /* Define a largura máxima para evitar que o input fique muito largo */
+    /*max-width: 800px; /* Define a largura máxima para evitar que o input fique muito largo */
     margin: 0 auto; /* Centraliza o elemento na tela */
 }
 /*INPUT QUE ESTÁ DENTRO DA CLASSE SEARCH*/
 .search input {
     flex: 1;
+    border-radius: 10px 0 0 10px;
+    border: 0;
 }
 
 .login {
@@ -410,24 +420,31 @@ button.add{
 }
 .produtos {
     display: flex;
+    align-items: center ;
+    gap: 80px;
 }
 .produt{
-    /* background-color: black; */
-    width: 47%;
+    width: 30%;
     height: auto;
+}
+
+.product-buy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
 }
 
 #img_bacia{
     border: 1px solid black;
-    width: 40%;
-    margin-left: 200px;
+    width: 100%;
 }
 #img_bacia:hover{
     opacity: 0.5;
 }
 
 .valores{
-    padding-top: 5%;
+    
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -446,10 +463,13 @@ button.add{
     margin: 10px 0px 10px 0px ;
 }
 
+.product-info {
+    flex: 1;
+} 
+
 .bnt_produtos
 {
-    padding-top: 6%;
-    margin-left: 2%;
+    
 }
 .bnt_buy{
     display: inline;
@@ -477,17 +497,13 @@ button.add{
     
 }
 
-#nome_produtos{
-    
-    padding-left: 25%;
+#nome_produtos {
     color: rgb(72, 76, 83);
 }
 
-@media screen and (min-width: 374px) and (max-width: 896px){
+@media screen and (min-width: 0px) and (max-width: 480px) {
     .login{
-        position: absolute;
-        left: 90%;
-        top: 3%;
+        flex-direction: column;
     }
 
     .header{
@@ -497,4 +513,21 @@ button.add{
         display: none;
         padding-bottom: 50px;
     }
+    .footer .container {
+        flex-direction: column;
+    }
 }
+
+@media screen and (min-width: 0px) and (max-width: 680px) {
+    .header .container {
+        flex-direction: column;
+    }
+    .cart {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {}
+@media screen and (min-width: 768px) and (max-width: 1200px) {}
+@media screen and (min-width: 1200px) {}
