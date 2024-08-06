@@ -8,6 +8,7 @@ $(document).ready(function(){
     });
     $("#promocao").owlCarousel({
         // loop: true,
+       
         margin: 20,
         responsive: {
             0: {
@@ -17,9 +18,11 @@ $(document).ready(function(){
             },
             480: {
                 items: 2
+                
             },
             768: {
-                items: 3
+                items: 3,
+                
             },
             1024: {
                 items: 4

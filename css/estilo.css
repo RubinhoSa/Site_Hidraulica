@@ -456,6 +456,12 @@ button.add{
     
 }
 
+.info-produtos{
+
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: rgb(58, 63, 71);
+}
 .valores #valor{
     margin: 0;
     font-size: 2rem;
